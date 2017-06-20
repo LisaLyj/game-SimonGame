@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>freeCodeCamp : Simon Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="keys">
+        <div class="row">
+            <div class="key t-l green inline unclickable"></div>
+            <div class="key t-r red inline unclickable"></div>
+        </div>
+        <div class="row">
+            <div class="key b-l yellow inline unclickable"></div>
+            <div class="key b-r blue inline unclickable"></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="control">
+        <h1 class="brand">Simon <span class="small">&copy;</span></h1>
+        <div class="row">
+          <div class="display inline">
+              <h1 class="count led-off">--</h1>
+              <h3 class="label">COUNT</h3>
+          </div>
+          <div class="btn-box inline">
+            <div class="btn_wrapper">
+              <div class="round-btn full-red clickable" id="start"></div>
+            </div>
+            <h3 class="label">START</h3>
+          </div>
+          <div class="btn-box inline">
+            <div class="btn_wrapper">
+              <div class="round-btn full-yellow clickable" id="strict"></div>
+            </div>
+            <h3 class="label">STRICT</h3>
+          </div>
+        </div>
+        <div class="row bot">
+          <h3 class="label inline">OFF</h3>
+          <div class="sw-slot inline">
+              <div class="switch" id="pwr-sw"></div>
+          </div>
+          <h3 class="label inline">ON</h3>
+        </div>
+    </div>
+  </div>
+
+  <audio class="myAudio" id="green">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="myAudio" id="red">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+  </audio>
+  <audio class="myAudio" id="yellow">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+  </audio>
+  <audio class="myAudio" id="blue">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+  </audio>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
